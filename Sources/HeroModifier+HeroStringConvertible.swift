@@ -117,6 +117,8 @@ extension HeroModifier: HeroStringConvertible {
       return .useNoSnapshot
     case "forceAnimate":
       return .forceAnimate
+    case "forceNonFade":
+      return .forceNonFade
     default: break
     }
     return nil
