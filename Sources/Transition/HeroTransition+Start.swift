@@ -33,8 +33,10 @@ extension HeroTransition {
       } else {
         toView.frame = fromView.frame
       }
+      transitionContainer?.addSubview(toView)
       toView.setNeedsLayout()
       toView.layoutIfNeeded()
+      toView.removeFromSuperview()
     }
 
     if let fvc = fromViewController, let tvc = toViewController {
